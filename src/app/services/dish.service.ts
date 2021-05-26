@@ -7,6 +7,9 @@ import { DISHES } from '../shared/dishes';
   providedIn: 'root'
 })
 export class DishService {
+  getDishes(): Dish[] {
+    return DISHES;    
+  }
 
   constructor() { }
   getDish(id: string): Dish {
